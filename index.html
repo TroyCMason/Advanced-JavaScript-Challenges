@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script Challenges </title>
+</head>
+<body>
+    <p>
+        Q.1 Show rating
+
+function showRating(rating){
+    let ratings = "";
+    for (let i = 0; i< Math.floor(rating); ++1){
+        ratings = ratings + "*";
+       if (i !== Math.floor(rating) - 1) {
+        ratings += " ";
+       }
+    }
+
+if (Number.isInteger(ratings)){
+ratings = ratings + " .";
+}
+return ratings;
+}
+
+console.log (showRating(3.5));
+
+
+    </p>
+</body>
+</html>
